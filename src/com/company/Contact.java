@@ -25,6 +25,14 @@ public class Contact {
         this.email = email;
     }
 
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
     public void display(){      //Displays name and email
         System.out.println("\nInfo:");
         System.out.println("Name: " + name + "\nEmail: " + email);

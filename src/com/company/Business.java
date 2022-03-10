@@ -8,6 +8,7 @@ public class Business extends Contact{
         this.phoneNumber = phoneNumber;
     }
 
+
     public Long getPhoneNumber() {
         return phoneNumber;
     }
@@ -17,8 +18,7 @@ public class Business extends Contact{
     }
 
     @Override
-    public void display() {     //Overrides original display method, adds phone number
-        super.display();
-        System.out.println("Phone Number: " + phoneNumber);
+    public String toString() {
+        return "Business{name=" + getName() + " email=" + getEmail() + " phonenumber=" + phoneNumber + '}';
     }
 }
